@@ -115,13 +115,10 @@ vector<portfolio> data_loader(string filename){
 
 void get_filename_from_user(string* filename){
     cout<<"Enter File Name if different from \"gradesheet\" else enter \"N\": ";
-    //cin>>*filename;
+    cin>>*filename;
     if(*filename == "N")
     *filename = "gradesheet";
     *filename = *filename + ".csv";
-
-    //for testing //remove in production
-    *filename = "gradesheet.csv";
 }
 
 void list_view_data(vector<portfolio> obj_vector){
